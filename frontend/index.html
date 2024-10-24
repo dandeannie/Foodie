@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MiniProject</title>
+</head>
+<body>
+    <!-- start menu  -->
+    <nav class="menu">
+        <h3>Foodie</h3>
+        <ul>
+            <li><a href="menu.html">Menu</a>
+                <ul>
+                    <li><a href="menu.html">Hamburger</a></li>
+                    <li><a href="menu.html">Pizza</a></li>
+                    <li><a href="menu.html">Pasta</a></li>
+                    <li><a href="menu.html">Sandwich</a></li>
+                </ul>
+            </li>
+            <li><a href="">Our Deal</a></li>
+            <li><a href="">Categories</a></li>
+            <li><a href="">Restaurants</a></li>
+        </ul>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+    </nav>
+    <!-- end menu  -->
+     <!-- start main -->
+      <main class="main">
+        <div>
+            <h1>Healthy Diet <br>  Everyday</h1>
+           
+            <p>order today and receive your <br> package tomorrow</p>
+            
+            <input type="button" onclick="window.location.href='menu.html'" value="View menu">
+            <input type="button" onclick="window.location.href='booking.html'" value="Book a table">
+            <h3>Breakfast</h3>
+            <h5>9:00 am - 11:00 am →</h5>
+        </div>
+        <figure><img src="pasta2.avif" alt=""></figure>
+      </main>
+      <!-- end main  -->
+      
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            // Add logout functionality here
+            alert('Logout functionality to be implemented');
+            // For now, we'll just redirect to the login page
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>
